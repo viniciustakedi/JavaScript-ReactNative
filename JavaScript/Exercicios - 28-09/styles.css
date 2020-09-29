@@ -1,0 +1,15 @@
+body{
+    font-family: 'Epilogue', sans-serif;
+    padding: 2em;
+    margin: 1em
+}
+
+#manipula{
+    height: 50px;
+    line-height: 50px;
+    color: #000000;
+    font-size: 18px;
+    background-color: snow;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}

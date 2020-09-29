@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Entendo o DOM (Document Object Model)</title>
+</head>
+
+<body>
+    <!-- abre a tag script para implementar o Js -->
+    <script>
+        var hora = 0; //Variável hora para representar a hora no cronometro
+        var minuto = 0; //Variável minuto para representar o minuto no cronometro
+        var segundo = 0; //Variável segundo para representar o segundo no cronometro
+        var cron; //Variável para representar o cronometro
+        var tempo = 1000; //Variável para representar o tempo e o valor equivalente 
+
+        //Função que faz o cronometro funcionar
+        function timer() { //criando a function
+            segundo++ //soma um segundo sempre que ligado
+            if (segundo == 60) {
+                segundo = 0;
+                minuto++;
+            }
+            if (minuto == 60) {
+                minuto = 0;
+                hora++;
+            }
+            var x = hora + ":" + minuto + ":" + segundo;
+            document.getElementById('Tempo').innerHTML = x;
+        }
+
+        function start() {
+            cron = setInterval(timer, tempo);
+            timer();
+        }
+        function stop() {
+            clearInterval(cron)
+        }
+        function reset() {
+            stop();
+            segundo = 0;
+            minuto = 0;
+            hora = 0;
+
+            var x = hora + ":" + minuto + ":" + segundo;
+            document.getElementById('Tempo').innerHTML = x;
+        }
+    </script>
+    <div class="container">
+        <h1><time id="Tempo">00:00:00</time></h1>
+        <button onclick="start()" id="start">Start</button>
+        <button onclick="stop()" id="stop">Stop</button>
+        <button onclick="reset()" id="reset">Reset</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+    <body>
+        <!-- Tag para titulos h1 sendo a maior -->
+        <h1>Teste de JavaScript</h1>
+
+        <!-- Para poder escrever um script precisa da tag script  -->
+        <script>
+            //Emite um alert antes da pessoa entrar no site com isso ela pode concordar com termos ou algo parecido
+            alert("Teste de JavaScript")
+        </script>
+
+        <script>
+            //Criando uma função
+            function myFunction() //My function é o nome da função
+            {
+                var y; //Declarando uma variavel chamada y
+                var idade = prompt("Digite sua idade: ") //Meio de pegar uma informação que o usuário inseriu
+
+                //Uma autenticação/Validação
+                if(idade != null) //define que se a idade for diferente de nulo cai nesse if
+                {
+                    //Variavel y ganhou um valor
+                    y = "Idade: " + idade + " anos."; //Interpolação com "+ idade +" permite colocar valores variaveis ou não variáveis no meio de strings
+                    document.getElementById("demo1").innerHTML=y; //Pega o elemento pelo id no caso "Demo1" e inseri em si mesmo o valor da variavel y 
+                }
+            }
+        </script>
+        <!-- Botão basico com o nome da função em javascript no caso puxando-a -->
+            <button onclick="myFunction()" >Clique Aqui</button> 
+            <!-- pega o valor/id do elemento demo1 e aplica na tag p -->
+            <p id="demo1"></p> 
+
+        <script>
+            function funcao1()
+            {
+                var x;
+                var r = confirm("Escolha um valor");
+                if(r == true)
+                {
+                    x = "Você pressionou confirmar";
+                }
+                else
+                {
+                    x = "Você pressionou cancelar";
+                }
+                document.getElementById("demo").innerHTML=x;
+            }
+        </script>
+            <input type="button" onclick="funcao1()" value="Dar Alerta">
+            <p id="demo"></p>
+
+            <h3>Fatorial</h3>
+            <script>
+                function fatorial(n){
+                    var resul = prompt("Insira um número para o fatorial: ")
+                    var n;
+                    if((n == 0) || (n == 1))
+                    {
+                        return 1;
+                    }
+                    else
+                    {
+                        return (n * fatorial(n - 1));
+                        n = "Fatorial de " + resul + " igual á: "
+                    }
+                    document.getElementById("fatorial1").innerHTML=n;
+                }
+            </script>
+            <button onclick="fatorial()">Insira o número do fatorial</button>
+            <p id="fatorial1"></p>
+
+
+    </body>
+</html>

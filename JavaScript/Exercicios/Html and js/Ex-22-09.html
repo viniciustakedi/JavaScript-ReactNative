@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Exercicios JavaScript 22/09</title>
+</head>
+
+<body>
+
+    <h1>Exercicio 1 - Chovendo ou não</h1>
+    <input type="button" onclick="Chovendo()" value="Esperando confirmação">
+    <p id="chuva1"></p>
+    <script>
+
+        function Chovendo() {
+            var c;
+            var r = confirm("Está chovendo?")
+            if (r == true) {
+                c = "Tire as roupas do varal";
+            }
+            else if (r == false) {
+                c = "Não está chovendo portanto pode deixar as roupas no varal";
+            }
+            document.getElementById("chuva1").innerHTML = c;
+        }
+
+    </script>
+
+
+    <!-- Titulo para o exercicio -->
+    <h1>Exercicio 2 - Bebida alcoólica</h1>
+    <input type="button" onclick="MaiorIdade()" value="Insira sua idade.">
+    <p id="age"></p>
+
+    <!-- Tag para usar um script js -->
+    <script>
+        function MaiorIdade() //Criando uma função, juntamente passando os parâmetros
+        {
+            var x; //Variavel para armazenar a resposta
+            var idade = prompt("Insira sua idade: "); //Para pegar a informação passada pelo usuário
+
+            if (idade >= 18) //If para definir que se o usuario for maior ou menor
+            {
+                //X armazena o dado e os "" são a reposta
+                x = "Você é maior de idade portanto pode comprar bebidas alcoólicas";
+            }
+            else // Else caso a primeira validação não for válida
+            {
+                //X armazena o dado e os "" são a reposta
+                x = "Você é menor de idade portanto não pode comprar bebidas alcoólicas";
+            }
+            //Document é a biblioteca e o getElementById (pega o elemento pelo ID (é passado o id))
+            //innerHTML é passado para ser validado dentro do html = x é o que vai ser passado para a string
+            document.getElementById("age").innerHTML = x;
+        }
+    </script>
+
+
+    <h1>Exercicio 3 - Montanha Russa</h1>
+    <input type="button" onclick="mntRussa()" value="Insira a idade e altura">
+    <p id="dm1"></p>
+    <p id="dm2"></p>
+    <p id="dm3"></p>
+
+    <script>
+        function mntRussa() {
+            var x;
+
+            var i = prompt("Insira sua idade!");
+            if (i != null) {
+                x = "Sua idade: " + i + " anos!";
+            }
+            document.getElementById("dm1").innerHTML = x;
+
+            var a = prompt("Insira sua altura");
+            if (a != null) {
+                x = "Sua altura: " + a + ".";
+            }
+            document.getElementById("dm2").innerHTML = x;
+
+            if (i >= 15 && a >= 1.50) {
+                document.getElementById("dm3").innerHTML = "Você pode entrar na montranha Russa!";
+            }
+            else {
+                document.getElementById("dm3").innerHTML = "Você não pode entrar na montanha Russa!"
+            }
+        }
+    </script>
+
+
+    <h1>Exercicio 4 - Blusa de Frio</h1>
+    <input type="button" onclick="blusaFrio()" value="Blusa de Frio e temperatura">
+    <p id="dm"></p>
+    <p id="dm4"></p>
+
+    <script>
+        function blusaFrio() {
+            var temper = prompt("Insira a temperatura: ");
+            var usaBls = confirm("Você está usando blusa?");
+            var x;
+
+            if (temper != null && usaBls == true) {
+                x = "A temperatura está " + temper + " graus. E você está usando blusa de frio";
+            }
+            else if (temper != null && usaBls == false) {
+                x = "A temperatura está " + temper + " graus. E você não está usando blusa de frio";
+            }
+            document.getElementById("dm").innerHTML = x
+
+            if (temper >= 20 && usaBls == true) {
+                document.getElementById("dm4").innerHTML = "Tire a blusa está " + temper + " graus não é necessário usar blusa de frio."
+            }
+            else if (temper >= 20 && usaBls == false) {
+                document.getElementById("dm4").innerHTML = "Isso ai!! Não precisa usar blusa está" + temper + " graus."
+            }
+            else if (temper < 20 && usaBls == true) {
+                document.getElementById("dm4").innerHTML = "Boa boa, está frio usar uma blusa é o ideal!"
+            }
+            else if (temper < 20 && usaBls == false) {
+                document.getElementById("dm4").innerHTML = "Opa está frio use uma blusa para se aquecer!!"
+            }
+
+        }    
+    </script>
+
+
+    <h1>Exercicio 5 - Gasolina</h1>
+    <input type="button" onclick="gas()" value="Gasolina ou etanol">
+    <p id="demoo"></p>
+
+    <script>
+        function gas() {
+            var calc;
+            var g = parseInt(prompt("Digite a gasolina"));
+            var a = parseInt(prompt("Digite o álcool"));
+
+            if (g !== null && a !== null) {
+                if (a <= g * 0.7) {
+                    calc = "Coloque álcool é mais vantajoso";
+                }
+                else {
+                    calc = "Coloque gasolina é mais vantajoso";
+                }
+            }
+            document.getElementById("demoo").innerHTML = calc;
+        }
+    </script>
+
+
+    <h1>Exercicio 6 - Média</h1>
+    <input type="button" onclick="media()" value="Calcular média">
+    <p id="resul"></p>
+
+    <script>
+
+        function media() {
+            var n1 = parseFloat(prompt("Insira a primeira nota: "));
+            var n2 = parseFloat(prompt("Insira a segunda nota: "));
+            var n3 = parseFloat(prompt("Insira a terceira nota: "));
+            var n4 = parseFloat(prompt("Insira a quarta nota: "));
+            var resultado = ((n1 + n2 + n3 + n4) / 4).toFixed(1);
+            var x;
+
+            if (n1 != null || n2 != null || n3 != null || n4 != null) {
+
+                x = "As notas foram, " + n1 + ", " + n2 + ", " + n3 + " e " + n4 + ". A média é: " + resultado;
+            }
+            document.getElementById("resul").innerHTML = x;
+        }
+
+    </script>
+
+
+    
+</body>
+
+</html>

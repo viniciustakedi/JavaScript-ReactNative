@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="deion" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <div id="container">
+
+    </div>
+    <table id="tabela">
+        <thead>
+            <tr>
+                <th>nome</th>
+                <th>genero</th>
+                <th>autor</th>
+                <th>editora</th>
+                <th>dataLancamento</th>
+                <th>QtdPaginas</th>
+                <th>preco</th>
+                <th>descricao</th>
+                <th>Idioma</th>
+                <th>RankMaisVendidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <p id="conteudo"></p>
+        </tbody>
+
+    </table>
+    <label for="nome">Nome do Livro:</label><br>
+    <input type="text" id="nome"><br>
+
+    <label for="genero">Genêro Livro:</label><br>
+    <input type="text" id="genero"><br>
+
+    <label for="autor">Autor do Livro:</label><br>
+    <input type="text" id="autor"><br>
+
+    <label for="editora">Editora do Livro:</label><br>
+    <input type="text" id="editora"><br>
+
+    <label for="dataLancamento">Data de lançamento do livro:</label><br>
+    <input type="date" id="dataLancamento"><br>
+
+    <label for="QtdPaginas">Quantidade de páginas:</label><br>
+    <input type="text" id="QtdPaginas"><br>
+
+    <label for="preco">Preço do livro:</label><br>
+    <input type="text" id="preco"><br>
+
+    <label for="descricao">Descrição:</label><br>
+    <input type="text" id="descricao"><br>
+
+    <label for="Idioma">Idioma do livro:</label><br>
+    <input type="text" id="Idioma"><br>
+
+    <label for="RankMaisVendidos">Posição no ranking dos mais vendidos:</label><br>
+    <input type="text" id="RankMaisVendidos"><br>
+
+    <button onclick="AddLivro()">Enviar se Deus quiser</button>
+</body>
+<script>
+    var Livros = [];
+    var Livro = {
+        nome: "",
+        genero: "",
+        autor: "",
+        editora: "",
+        dataLancamento: "",
+        QtdPaginas: 0,
+        preco: 0,
+        descricao: "",
+        Idioma: "",
+        RankMaisVendidos: "",
+    }
+    function AddLivro() {
+        Livro.nome = document.getElementById('nome').value;
+        Livro.genero = document.getElementById('genero').value;
+        Livro.autor = document.getElementById('autor').value;
+        Livro.editora = document.getElementById('editora').value;
+        Livro.dataLancamento = document.getElementById('dataLancamento').value;
+        Livro.QtdPaginas = document.getElementById('QtdPaginas').value;
+        Livro.preco = document.getElementById('preco').value;
+        Livro.descricao = document.getElementById('descricao').value;
+        Livro.Idioma = document.getElementById('Idioma').value;
+        Livro.RankMaisVendidos = document.getElementById('RankMaisVendidos').value;
+
+        Livros.push(Livro);
+        console.log(Livros);
+        
+        var tabela = document.getElementById("tabela")
+        var numeroLinhas = tabela.rows.length;
+        var linha = tabela.insertRow(numeroLinhas);
+
+        for (let index = 0; index < 10; index++) {
+            let celula1 = linha.insertCell(index);
+            celula1.innerHTML = Livro[Object.keys(Livro)[index]];
+        }
+    }
+
+    function Remove() {
+
+    }
+
+</script>
+
+</html>
