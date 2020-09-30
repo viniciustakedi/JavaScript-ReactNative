@@ -15,37 +15,16 @@
     <div class="conteudo">
         <h1>Exercícios JavaScript com resolução.</h1>
         <h2>Exercicio 1 - Média</h2>
-        <p>Calcule a média de diversas notas digitadas pelo usuário.</p><br>
-        <p>No caso vamos utilizar 4 notas, podem ser aleatórias!! Faça o teste abaixo.</p>
+        <p>Calcule a média de diversas notas digitadas pelo usuário. No caso vamos utilizar 4 notas que podem ser
+            aleatórias, sendo elas com números quebrados ou não.</p>
+        <p> Faça o teste abaixo.</p>
 
-        <input type="text" id="n1">
-        <input type="text" id="n2">
-        <input type="text" id="n3">
-        <input type="text" id="n4">
-        <input type="submit" onclick="media()" id="enviar">
-        <p id="resulMedia"></p>
+        <input id="buttonMedia" type="button" onclick="media()" value="Clique aqui para testar">
 
-        <script>
-            function media() {
-                var num1 = document.getElementById('n1').innerHTML.value;
-                var num2 = document.getElementById('n2').innerHTML.value;
-                var num3 = document.getElementById('n3').innerHTML.value;
-                var num4 = document.getElementById('n4').innerHTML.value;
-
-                var mediaNum = (num1 + num2 + num3 + num4) / 4;
-
-                if (mediaNum != null) {
-                    return mediaNum;
-                }
-                else {
-                    return 'Algum valor está inválido!';
-                }
-
-                document.getElementById('resulMedia').innerHTML = mediaNum;
-            }
-        </script>
-
-
+        <div id="divResMedia">
+            <h3>Média:⠀</h3>
+            <h3 id="resulMedia"></h3>
+        </div>
     </div>
 </body>
 

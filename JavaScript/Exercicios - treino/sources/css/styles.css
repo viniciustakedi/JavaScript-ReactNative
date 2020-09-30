@@ -14,3 +14,27 @@ html, body{
 body{
     font-family: 'Open Sans', sans-serif;
 }
+
+.conteudo{
+    padding: 2em;
+    margin: 2em;
+    background: #f3f3f3;
+    border-radius: 10px;
+}
+
+#divResMedia{
+    display: flex;
+    margin: 1em;
+    border-radius: 15px;
+    background: #ffffff;
+}
+
+#divResMedia > h3{
+    margin: 0.3em;
+}
+
+#buttonMedia{
+    border-radius: 10px;
+    width: 160px;
+    height: 25px;
+}
