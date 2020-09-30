@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" href="sources/css/styles.css">
+    <title>Exercícios JavaScript</title>
+</head>
+
+<body>
+    <div class="conteudo">
+        <h1>Exercícios JavaScript com resolução.</h1>
+        <h2>Exercicio 1 - Média</h2>
+        <p>Calcule a média de diversas notas digitadas pelo usuário.</p><br>
+        <p>No caso vamos utilizar 4 notas, podem ser aleatórias!! Faça o teste abaixo.</p>
+
+        <input type="text" id="n1">
+        <input type="text" id="n2">
+        <input type="text" id="n3">
+        <input type="text" id="n4">
+        <input type="submit" onclick="media()" id="enviar">
+        <p id="resulMedia"></p>
+
+        <script>
+            function media() {
+                var num1 = document.getElementById('n1').innerHTML.value;
+                var num2 = document.getElementById('n2').innerHTML.value;
+                var num3 = document.getElementById('n3').innerHTML.value;
+                var num4 = document.getElementById('n4').innerHTML.value;
+
+                var mediaNum = (num1 + num2 + num3 + num4) / 4;
+
+                if (mediaNum != null) {
+                    return mediaNum;
+                }
+                else {
+                    return 'Algum valor está inválido!';
+                }
+
+                document.getElementById('resulMedia').innerHTML = mediaNum;
+            }
+        </script>
+
+
+    </div>
+</body>
+
+</html>
