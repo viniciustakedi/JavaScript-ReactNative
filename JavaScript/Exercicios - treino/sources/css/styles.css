@@ -29,12 +29,16 @@ body{
     background: #ffffff;
 }
 
-#divResMedia > h3{
+#divResMedia > h4{
     margin: 0.3em;
 }
 
 #buttonMedia{
     border-radius: 10px;
+    border: 1px solid;
+    border-color: #000000;
+    color: black;
+    font-size: 12px;
     width: 160px;
     height: 25px;
 }
