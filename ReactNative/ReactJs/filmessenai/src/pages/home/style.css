@@ -1,0 +1,65 @@
+.principal{
+    align-items: center;
+}
+
+.txtH1{ 
+    text-align: center;
+    font-size: 16px;
+    padding: 1em;
+}
+
+.txtPrin{
+    align-items: center;
+    margin: 4em;
+}
+
+.txtPrin > h3{
+    font-size: 18px;
+    padding: 0.5em;
+}
+
+.txtPrin > text{
+    font-size: 14px;
+}
+
+.filmCate{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    width: 55em;
+    margin-left: 12em;
+    margin-right: 8em;
+    padding: 3rem;
+
+}
+
+.Filmes > img{
+    height: 90px;
+    width: 90px;
+    padding: 0.5em;
+}
+
+.Filmes > h3{
+    padding: 0.5em;
+}
+
+.Filmes > p{
+    padding: 0.5em;
+    font-size: 14px;
+}
+
+.categoria > img{
+    height: 90px;
+    width: 90px;
+    padding: 0.5em;
+}
+
+.categoria > h3{
+    padding: 0.5em;
+}
+
+.categoria > p{
+    padding: 0.5em;
+    font-size: 14px;
+}

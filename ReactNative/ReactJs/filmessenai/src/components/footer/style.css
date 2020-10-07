@@ -1,0 +1,18 @@
+.footer > hr{
+    width: .1px;
+    height: 20vh;
+    border-left: 1px solid;
+    color: white;
+    background-color: white;
+}
+
+.footer{
+    background-color: #F6511D;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto auto;
+    padding: 3.5em;
+    color: white;
+}
+
