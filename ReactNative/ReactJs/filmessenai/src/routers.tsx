@@ -9,8 +9,8 @@ function Routers() {
     return(
         <BrowserRouter>
             <Route  path="/"  exact component={Home}/>
-            <Route  path="/Login" component={Login}/>
-            <Route  path="/Cadastro" component={Cadastro}/>
+            <Route  path="/login" component={Login}/>
+            <Route  path="/cadastro" component={Cadastro}/>
         </BrowserRouter>
     );
 }

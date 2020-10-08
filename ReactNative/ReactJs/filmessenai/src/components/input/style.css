@@ -1,0 +1,10 @@
+
+.area input{
+    border: 1px black solid;
+    height: 40px;
+    width: 350px;
+}
+
+.area{
+    font-weight: bold;
+}

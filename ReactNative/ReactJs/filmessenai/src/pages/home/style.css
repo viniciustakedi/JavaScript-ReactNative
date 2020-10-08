@@ -1,65 +1,70 @@
-.principal{
+.home1{
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.txtH1{ 
+.home1 > h1{
     text-align: center;
-    font-size: 16px;
-    padding: 1em;
+    font-size: 28;
+    padding: 30px;
 }
 
-.txtPrin{
-    align-items: center;
-    margin: 4em;
+.txt{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px; 
+    padding: 25px;  
 }
 
-.txtPrin > h3{
-    font-size: 18px;
-    padding: 0.5em;
+.txt h3{
+    padding-bottom: 1em;
 }
 
-.txtPrin > text{
-    font-size: 14px;
-}
-
-.filmCate{
+.txtPd{
     display: flex;
     align-items: center;
-    align-content: center;
-    justify-content: space-between;
-    width: 55em;
-    margin-left: 12em;
-    margin-right: 8em;
-    padding: 3rem;
-
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 150px;
+    margin-right: 50px;
 }
 
-.Filmes > img{
-    height: 90px;
-    width: 90px;
-    padding: 0.5em;
+.filmes{
+    width: 500px;
 }
 
-.Filmes > h3{
-    padding: 0.5em;
+.filmes h3{
+    padding-bottom: 20px;
 }
 
-.Filmes > p{
-    padding: 0.5em;
+.filmes p {
+    max-width: 50ch;
     font-size: 14px;
 }
 
-.categoria > img{
-    height: 90px;
+.filmes img{
+    padding-bottom: 15px;
     width: 90px;
-    padding: 0.5em;
+    height: 90px;
 }
 
-.categoria > h3{
-    padding: 0.5em;
+.categoria{
+    width: 500px;
 }
 
-.categoria > p{
-    padding: 0.5em;
+.categoria h3{
+    padding-bottom: 20px;
+}
+
+.categoria img{
+    padding-bottom: 15px;
+    width: 90px;
+    height: 90px;
+}
+
+.categoria p{
+    max-width: 50ch;
     font-size: 14px;
 }

@@ -5,18 +5,19 @@ import '../../assets/styles/global.css';
 
 function Footer() {
     return (
-        <div className="footer">
-            <div>
-                <img src={LNegativa} alt="logo em cores negativas, preto e branco"/>
+            <div className="footer">
+                <img src={LNegativa} alt="logo em cores negativas, preto e branco" />
+
+                <hr/>
+
+                <ul className="infos">
+                    <li>Company Inc., 8901 Marmora Road, Glasgow, D04 89GR</li>
+                    <li>Call us now toll free: (800)2345-6789</li>
+                    <li>Customer support: support@demolink.org</li>
+                    <li>Skype: sample-username</li>
+                </ul>
+
             </div>
-            <hr/>
-            <div>
-                <p>Company Inc., 8901 Marmora Road, Glasgow, D04 89GR</p><br/>
-                <p>Call us now toll free: (800)2345-6789</p><br/>
-                <p>Customer support: support@demolink.org</p><br/>
-                <p>Skype: sample-username</p><br/>
-            </div> 
-        </div>
     );
 }
 export default Footer;

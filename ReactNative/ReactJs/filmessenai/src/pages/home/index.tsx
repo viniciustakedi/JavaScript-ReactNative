@@ -9,32 +9,33 @@ import Footer from '../../components/footer';
 
 function Home() {
     return (
-        <div className="principal">
-            <Header />
-            <div className="prin">
-                <div className="txtH1">
+        <div>
+            <Header description="Conheça nossa coletânea" />
+            <div className="centro">
+                <div className="home1">
                     <h1>Monte sua coletânea de filmes...</h1>
-                </div>
-                <div className="txtPrin">
-                    <h3>Lorem ipsum dolor sit amet conse ctetur adipisicing tempor</h3>
-                    <text>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
-                        Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut eiusmod tempor incididunt ut labore  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. </text>
-                </div>
-                <div className="filmCate">
-                    <div className="Filmes">
-                        <img src={cinema} alt="disco de cinema" />
-                        <h3>Filmes</h3>
-                        <p>Filmes Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut eiusmod tempor incididunt ut labore  aliquip ex ea commodo consequat. </p>
+                    <div className="txt">
+                        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                     </div>
-                    <div className="categoria">
-                        <img src={theater} alt="mascaras de teatro" />
-                        <h3>Categoria</h3>
-                        <p>Filme Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut eiusmod tempor incididunt ut labore  aliquip ex ea commodo consequat. </p>
+
+                    <div className="txtPd">
+                        <div className="filmes">
+                            <img src={cinema} alt="disco de cinema"/>
+                            <h3>Filmes</h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                        </div>
+                        <div className="categoria">
+                            <img src={theater} alt="mascaras de teatro"/>
+                            <h3>Categoria</h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
+
     );
 }
 

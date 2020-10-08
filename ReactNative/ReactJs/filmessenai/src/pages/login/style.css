@@ -1,0 +1,46 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.login h1{
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 45px;
+}
+
+.login Input{
+    border: 1px black solid;
+    height: 40px;
+    width: 350px;
+}
+
+.login .submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email{
+    padding-bottom: 35px;
+}
+
+.senha{
+    padding-bottom: 35px;
+}
+
+.submit input{
+    width: 160px;
+    height: 48px;
+    background-color: #F6511D;
+    color: #ffffff;
+    border: 0px;
+    margin-bottom: 20px;
+    
+}
+
+
+

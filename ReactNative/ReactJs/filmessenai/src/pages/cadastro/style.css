@@ -1,0 +1,45 @@
+.cadastroH{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.cadastroH h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 22px;
+    padding-bottom: 45px;   
+}
+
+.cadastroH .submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Nome{
+    padding-bottom: 35px;
+}
+
+.Email{
+    padding-bottom: 35px;
+}
+
+.Permissao{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 35px;
+}
+
+.Permissao select{
+    border: 1px black solid;
+    height: 40px;
+    width: 350px;
+}
+
+.Permissao label{
+    font-weight: bold;
+}
