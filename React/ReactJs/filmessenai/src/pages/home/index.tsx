@@ -10,7 +10,8 @@ import Footer from '../../components/footer';
 function Home() {
     return (
         <div>
-            <Header description="Conheça nossa coletânea" />
+            <Header description="Conheça nossa coletânea" text="Olá, seja bem vindo(a)"/>
+            
             <div className="centro">
                 <div className="home1">
                     <h1>Monte sua coletânea de filmes...</h1>

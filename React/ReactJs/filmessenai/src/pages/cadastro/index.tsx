@@ -4,6 +4,8 @@ import './style.css';
 import '../../assets/styles/global.css';
 import Footer from '../../components/footer';
 import Input from '../../components/input';
+import Button from '../../components/button';
+import { textSpanEnd } from 'typescript';
 
 function Cadastro() {
     return (
@@ -33,7 +35,7 @@ function Cadastro() {
                     </div>
 
                     <div className="submit">
-                        <input type="submit" value="Cadastrar"/>
+                        <Button onClick={() => Cadastro}  name="Cadastrar" />
                     </div>
                 </div>
             </div>

@@ -4,17 +4,18 @@ import './style.css';
 import '../../assets/styles/global.css';
 import { Link } from 'react-router-dom';
 
-interface HeaderProps{
+interface HeaderProps {
     description: string;
+    text?: string;
 }
 
-const Header:React.FC<HeaderProps> = (props) => { //Fc = Function Component
+const Header: React.FC<HeaderProps> = (props) => { //Fc = Function Component
     return (
         <div className="principal">
             <div className="header">
                 <div className="align">
                     <nav>
-                        <Link to="/"> <img id="img" src={logo} alt="Logo" /></Link>
+                        <Link to="/"><img id="img" src={logo} alt="Logo" /></Link>
 
                         <ul className="menu">
                             <li><Link to="/">Home</Link></li>
@@ -23,6 +24,7 @@ const Header:React.FC<HeaderProps> = (props) => { //Fc = Function Component
                         </ul>
                     </nav>
                     <h3>{props.description}</h3>
+                    {props.text && <p>{props.text}</p>}
                 </div>
             </div>
         </div>

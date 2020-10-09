@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../../components/header/index';
 import Input from '../../components/input/index';
 import './style.css';
 import '../../assets/styles/global.css';
-import Footer from '../../components/footer';
+import Footer from '../../components/footer/index';
+import Button from '../../components/button/index';
 
 
 function Login() {
@@ -23,7 +24,7 @@ function Login() {
                     </div>
 
                     <div className="submit">
-                        <input type="submit" />
+                        <Button onClick={() => Login()} name="Enviar" />
                     </div>
                 </div>
             </div>
