@@ -3,13 +3,12 @@ import './style.css';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
     name: string;
-    onClick: any;
 }
 
-const Button: React.FC<ButtonProps> = ({name, onClick}) => {
+const Button: React.FC<ButtonProps> = ({name}) => {
     return(
         <div>
-            <button onClick={onClick} className="ButtonArea">{name}</button>
+            <button className="ButtonArea">{name}</button>
         </div>
     );
 }
