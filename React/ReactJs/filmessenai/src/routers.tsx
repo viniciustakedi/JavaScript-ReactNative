@@ -5,6 +5,7 @@ import Cadastro from './pages/cadastro';
 import Home from './pages/home';
 import Login from './pages/login/index';
 import Filmes from './pages/filmes/index';
+import Generos from './pages/generos/index'
 
 function Routers() {
     return(
@@ -13,6 +14,7 @@ function Routers() {
             <Route  path="/login" component={Login}/>
             <Route  path="/cadastro" component={Cadastro}/>
             <Route  path="/filmes" component={Filmes}/>
+            <Route  path="/generos" component={Generos}/>
         </BrowserRouter>
     );
 }

@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.filmes{
+.generos{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,18 +12,17 @@
     padding-top: 30px;
 }
 
-.filmes h1{
+.generos h1{
     text-align: center;
     font-size: 22px;
     padding-bottom: 15px;
 }
 
-.filmes img{
+.generos img{
     display: flex;
     align-content: center;
     justify-content: center;
     width: 90px;
     height: 100px;
 }
-
 
