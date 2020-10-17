@@ -3,11 +3,42 @@
     padding: 0;
 }
 
+.centro{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-body{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.th{
+    padding-bottom: 15px;
+}
+
+table{
+    padding-bottom: 30px;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    position: relative;
+    top: 15px;
+}
+
+
 .generos{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding-bottom: 30px;
     padding-top: 30px;
 }
@@ -25,4 +56,12 @@
     width: 90px;
     height: 100px;
 }
+
+.icon{
+    margin-left: 30px;
+    width: 25px;
+    height: 25px;
+}
+
+
 
