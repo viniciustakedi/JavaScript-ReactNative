@@ -158,7 +158,7 @@ function Filmes() {
                                     return (
                                         <tr key={item.idFilmes}>
                                             <td>{item.titulo}</td>
-                                            <td>{item.nome}</td>
+                                            <td>{item.genero.nome}</td>
                                             <td>
                                                 <img src={Refresh} alt="" className="icon" onClick={() => Atualizar(item.idFilme)} />
                                                 <img src={Trash} alt="" className="icon" onClick={() => Delete(item.idFilme)} />
